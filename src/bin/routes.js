@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 const { controller } = require('./Controller')
 
 app.get("/", (req, res) => {
-  res.send("Inicio")
+  res.send("Bienvenido")
 })
 
 // Categorias
@@ -31,9 +31,9 @@ app.delete("/categorias/:id", (req, res) => {
 app.get("/temas", (req, res) => {
   controller.getTemas(res);
 })
-app.get("/temas/:descipcion", (req, res) => {
-  let desc = req.params.descripcion;
-  controller.getTema(res, desc);
+app.get("/temas/:name", (req, res) => {
+  let name = req.params.name;
+  controller.getTema(res, name);
 })
 app.post("/temas", (req, res) => {
   let tema = req.body.tema;

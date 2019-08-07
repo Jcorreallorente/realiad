@@ -61,9 +61,9 @@ class Controller {
       res.send(result);
     })
   }
-  getTema(res, desc) {
+  getTema(res, name) {
     Tema.find({
-      descripcion: desc
+      name: name
     }, (err, result) => {
       if (err) throw err;
       res.send(result);
@@ -151,21 +151,21 @@ class Controller {
   getRes(res) {
     Respuesta.find({}, (err, result) => {
       if (err) throw err;
-      res.send(result); 
+      res.send(result);
     })
   }
-  
+
   // -------------------------------------------------------------------
   getRepositorios (res) {
     Repositorio.find({}, (err, result) => {
       if (err) throw err;
-      res.send(result); 
+      res.send(result);
     })
   }
   getRepositorio (res, id) {
     Repositorio.find({_id: id}, (err, result) => {
       if (err) throw err;
-      res.send(result); 
+      res.send(result);
     })
   }
   setRepositorio(res, repo) {
