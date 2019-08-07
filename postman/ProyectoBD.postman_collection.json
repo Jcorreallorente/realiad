@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "f8631ee1-4765-4490-a80d-295161651dcc",
+		"name": "ProyectoBD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "obtenerCategorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/categorias",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearCategoria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cat\": {\n\t\t\"name\": \"ghjkl\",\n\t\t\"nombre_animal\": \"perro\",\n\t\t\"reproduccion\": \"sexual\",\n\t\t\"clasificacion\": \"gdhjhda\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/categorias",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrarCategorias",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/categorias/5d49b8c03e8354056be0ea2c",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"categorias",
+								"5d49b8c03e8354056be0ea2c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerCategoriasPorAnimal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/categorias/Tiburón",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"categorias",
+								"Tiburón"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Temas",
+			"item": [
+				{
+					"name": "ObtenerTemas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/temas",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerTemasPorNombre",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/temas/Invertebrados",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"temas",
+								"Invertebrados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearTema",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"tema\": {\n\t\t\"name\": \"nombre\",\n\t\t\"descripcion\": \"descripcion\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/temas",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarTema",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"tema\": {\n\t\t\"name\": \"nombre\",\n\t\t\"descripcion\": \"descripcion\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/temas/5d49c126a126ed0d87256ab1",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"temas",
+								"5d49c126a126ed0d87256ab1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Repositorio",
+			"item": [
+				{
+					"name": "ObteneRepositorio",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/repositorios",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"repositorios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObteneRepositoriosPorID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/repositorios/5d35234f1c9d440000fed7f5",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"repositorios",
+								"5d35234f1c9d440000fed7f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearRepositorio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"repo\": {\n\t\t\"name\": \"preguntas\",\n\t\t\"nombre_archivo\": \"pregunta2\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/repositorios",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"repositorios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Preguntas",
+			"item": [
+				{
+					"name": "ObtenePreguntas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/preguntas",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenePreguntasPorId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/preguntas/5d476cb587aa5e22a4603fc2",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"preguntas",
+								"5d476cb587aa5e22a4603fc2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearPregunta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"preg\": {\n\t\"pregunta\": \"Que tipo de respiración tienen los caballitos de mar\"\n}\n}"
+						},
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/preguntas",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Respuesta",
+			"item": [
+				{
+					"name": "ObteneRrespuestas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2.ws-us0.gitpod.io/respuestas",
+							"protocol": "https",
+							"host": [
+								"3000-b2cdfb7e-2a88-42be-8df9-e892a65fa5a2",
+								"ws-us0",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"respuestas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
